@@ -12,7 +12,7 @@ const translations = {
         frameworks_title: "Frameworks y Librerías",
         databases_title: "Bases de Datos",
         tools_title: "Herramientas y Otros",
-        projects_title: "Proyectos recientes",
+        projects_section_title: "Proyectos",
         no_projects: "No se encontraron proyectos aún. (Debes añadirlos manualmente aquí)",
         contact_title: "Contacto",
         lets_talk: "Hablemos",
@@ -24,8 +24,12 @@ const translations = {
         // Traducciones para el proyecto "Portafolio"
         portfolio_project_title: "Portafolio",
         portfolio_project_description: "Un portafolio técnico completo desarrollado con Django, Python, PostgreSQL, Gunicorn y Whitenoise. Incluye un backend robusto para la gestión de proyectos y un frontend dinámico.",
-        technologies: "Tecnologías:",
-        view_source_code: "Ver Código Fuente",
+        technologies_label: "Tecnologías:",
+
+        // Traducciones para el proyecto "404/Blog"
+        blog_project_title: "404/Blog",
+        blog_project_description: "Un blog técnico desarrollado inicialmente con Django, ahora transformado en un sitio estático usando Pelican para optimizar rendimiento y costos. Incluye un backend de Django para la gestión de contenido.",
+        view_blog: "Ver Blog",
     },
     en: {
         page_title: "Portfolio",
@@ -40,7 +44,7 @@ const translations = {
         frameworks_title: "Frameworks & Libraries",
         databases_title: "Databases",
         tools_title: "Tools & Others",
-        projects_title: "Recent Projects",
+        projects_section_title: "Projects",
         no_projects: "No projects found yet. (You must add them manually here)",
         contact_title: "Contact",
         lets_talk: "Let's Talk",
@@ -52,8 +56,12 @@ const translations = {
         // Traducciones para el proyecto "Portfolio"
         portfolio_project_title: "Portfolio",
         portfolio_project_description: "A complete technical portfolio developed with Django, Python, PostgreSQL, Gunicorn, and Whitenoise. It includes a robust backend for project management and a dynamic frontend.",
-        technologies: "Technologies:",
-        view_source_code: "View Source Code",
+        technologies_label: "Technologies:",
+
+        // Traducciones para el proyecto "404/Blog"
+        blog_project_title: "404/Blog",
+        blog_project_description: "A technical blog initially developed with Django, now transformed into a static site using Pelican to optimize performance and costs. It includes a Django backend for content management.",
+        view_blog: "View Blog",
     }
 };
 
