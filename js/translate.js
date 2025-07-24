@@ -19,11 +19,8 @@ const translations = {
         contact_text: "Si tienes alguna pregunta, una oferta de trabajo o simplemente quieres saludar, no dudes en contactarme. ¡Estoy disponible para nuevos proyectos!",
         made_with: "Esta página fue hecha con:",
         portfolio_tech: "Portafolio Técnico",
+        cv_path: "cv/CV-jesus_martinez.pdf", // Ruta del CV en español
         // Añade aquí las traducciones para tus proyectos hardcodeados
-        // project1_title: "Título del Proyecto 1",
-        // project1_description: "Descripción del proyecto 1.",
-        // technologies: "Tecnologías:",
-        // view_project: "Ver proyecto",
     },
     en: {
         page_title: "Portfolio",
@@ -45,11 +42,8 @@ const translations = {
         contact_text: "If you have any questions, a job offer, or just want to say hello, don't hesitate to contact me. I'm available for new projects!",
         made_with: "This page was made with:",
         portfolio_tech: "Technical Portfolio",
+        cv_path: "cv/CV-jesus_martinez-EN.pdf", // Ruta del CV en inglés
         // Add here translations for your hardcoded projects
-        // project1_title: "Project 1 Title",
-        // project1_description: "Project 1 description.",
-        // technologies: "Technologies:",
-        // view_project: "View project",
     }
 };
 
@@ -68,6 +62,12 @@ function setLanguage(lang) {
     const titleElement = document.querySelector('title[data-translate="page_title"]');
     if (titleElement && translations[lang] && translations[lang]['page_title']) {
         titleElement.textContent = translations[lang]['page_title'];
+    }
+
+    // Update CV download link
+    const cvLink = document.getElementById('cv-download-link');
+    if (cvLink && translations[lang] && translations[lang]['cv_path']) {
+        cvLink.href = translations[lang]['cv_path'];
     }
 }
 
