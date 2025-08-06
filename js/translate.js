@@ -30,6 +30,10 @@ const translations = {
         blog_project_title: "404/Blog",
         blog_project_description: "Un blog técnico desarrollado inicialmente con Django, ahora transformado en un sitio estático usando Pelican para optimizar rendimiento y costos. Incluye un backend de Django para la gestión de contenido.",
         view_blog: "Ver Blog",
+
+        // Traducciones para el proyecto "Synapse"
+        synapse_project_title: "Synapse - Asistente de Datos",
+        synapse_project_description: "Proyecto educativo completo de análisis de datos con Django. Incluye análisis automático de datasets, detección de valores faltantes, limpieza de datos con múltiples estrategias, visualizaciones interactivas (barras, líneas, dispersión), generación de reportes PDF profesionales y soporte multilingüe. Demuestra habilidades avanzadas en análisis de datos y desarrollo web full-stack.",
     },
     en: {
         page_title: "Portfolio",
@@ -62,6 +66,10 @@ const translations = {
         blog_project_title: "404/Blog",
         blog_project_description: "A technical blog initially developed with Django, now transformed into a static site using Pelican to optimize performance and costs. It includes a Django backend for content management.",
         view_blog: "View Blog",
+
+        // Traducciones para el proyecto "Synapse"
+        synapse_project_title: "Synapse - Data Assistant",
+        synapse_project_description: "Complete educational data analysis project with Django. Includes automatic dataset analysis, missing value detection, data cleaning with multiple strategies, interactive visualizations (bars, lines, scatter), professional PDF report generation, and multilingual support. Demonstrates advanced skills in data analysis and full-stack web development.",
     }
 };
 
