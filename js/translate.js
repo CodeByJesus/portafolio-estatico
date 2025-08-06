@@ -21,9 +21,6 @@ const translations = {
         portfolio_tech: "Portafolio Técnico",
         cv_path: "cv/CV-jesus_martinez.pdf", // Ruta del CV en español
 
-        // Traducciones para el proyecto "Portafolio"
-        portfolio_project_title: "Portafolio",
-        portfolio_project_description: "Un portafolio técnico completo desarrollado con Django, Python, PostgreSQL, Gunicorn y Whitenoise. Incluye un backend robusto para la gestión de proyectos y un frontend dinámico.",
         technologies_label: "Tecnologías:",
 
         // Traducciones para el proyecto "404/Blog"
@@ -57,9 +54,6 @@ const translations = {
         portfolio_tech: "Technical Portfolio",
         cv_path: "cv/CV-jesus_martinez-EN.pdf", // Ruta del CV en inglés
 
-        // Traducciones para el proyecto "Portfolio"
-        portfolio_project_title: "Portfolio",
-        portfolio_project_description: "A complete technical portfolio developed with Django, Python, PostgreSQL, Gunicorn, and Whitenoise. It includes a robust backend for project management and a dynamic frontend.",
         technologies_label: "Technologies:",
 
         // Traducciones para el proyecto "404/Blog"
