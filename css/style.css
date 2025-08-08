@@ -96,21 +96,27 @@ main, header, nav, .container {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#contacto .form-control {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
+/* Contact Description */
+.contact-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #adb5bd;
 }
 
-#contacto .form-control:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: #0dcaf0;
-  box-shadow: none;
+.contact-email a {
   color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
+.contact-email a:hover {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+/* Social Icons */
 .social-icon i {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #adb5bd;
   transition: color 0.3s, transform 0.3s;
 }
@@ -118,6 +124,80 @@ main, header, nav, .container {
 .social-icon:hover i {
   color: #0dcaf0;
   transform: scale(1.1);
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #contacto {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  #contacto h2 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  #contacto h4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .contact-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .contact-email {
+    margin-bottom: 1rem !important;
+  }
+  
+  .social-icon i {
+    font-size: 1.6rem;
+  }
+  
+  .redes-sociales {
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contacto {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  #contacto h2 {
+    margin-bottom: 1rem !important;
+  }
+  
+  #contacto h4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .contact-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .contact-email {
+    margin-bottom: 0.75rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .social-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .redes-sociales {
+    gap: 0.2rem;
+  }
 }
 
 
@@ -137,6 +217,7 @@ main, header, nav, .container {
   background: linear-gradient(90deg, #0d6efd, #6610f2, #20c997, #0d6efd);
   background-size: 300% 300%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-move 3s ease-in-out infinite;
   font-family: 'Montserrat', Arial, sans-serif;
