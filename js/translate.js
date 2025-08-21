@@ -31,6 +31,7 @@ const translations = {
         // Traducciones para el proyecto "Synapse"
         synapse_project_title: "Synapse - Asistente de Datos",
         synapse_project_description: "Proyecto educativo completo de análisis de datos con Django. Incluye análisis automático de datasets, detección de valores faltantes, limpieza de datos con múltiples estrategias, visualizaciones interactivas (barras, líneas, dispersión), generación de reportes PDF profesionales y soporte multilingüe. Demuestra habilidades avanzadas en análisis de datos y desarrollo web full-stack.",
+        synapse_open_app: "Abrir App",
     },
     en: {
         page_title: "Portfolio",
@@ -64,6 +65,7 @@ const translations = {
         // Traducciones para el proyecto "Synapse"
         synapse_project_title: "Synapse - Data Assistant",
         synapse_project_description: "Complete educational data analysis project with Django. Includes automatic dataset analysis, missing value detection, data cleaning with multiple strategies, interactive visualizations (bars, lines, scatter), professional PDF report generation, and multilingual support. Demonstrates advanced skills in data analysis and full-stack web development.",
+        synapse_open_app: "Open App",
     }
 };
 
