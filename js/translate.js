@@ -2,11 +2,17 @@ const translations = {
     es: {
         page_title: "Portafolio",
         greeting: "Hola 👋, soy",
-        job_title: "Desarrollador Junior con especialidad en Backend y Analítica de Datos",
+        job_title: "Python Developer | QA Automation & Testing",
         download_cv: "Descargar CV",
         view_projects: "Ver Proyectos",
         about_me_title: "Sobre Mí",
-        about_me_text: "Soy un apasionado desarrollador con un fuerte interés en construir soluciones eficientes y escalables. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente. Mi objetivo es aportar valor a través del código y colaborar en proyectos innovadores.",
+        about_me_subtitle: "De construir aplicaciones a garantizar que funcionen perfectamente.",
+        about_me_intro: "Comencé como desarrollador backend con Django, pero descubrí mi verdadera pasión: asegurar que el software no solo funcione, sino que funcione perfectamente en todo momento. Hoy me especializo en automatización de testing y análisis de calidad con Python.",
+        what_i_do_title: "¿Qué hago?",
+        what_i_do_text: "Creo frameworks de testing automatizado que detectan bugs antes que los usuarios. Diseño herramientas que validan APIs 24/7. Construyo sistemas que analizan datos y generan reportes sin intervención humana. Y exploro cómo la automatización puede fortalecer la seguridad de aplicaciones.",
+        automation_stack_title: "Mi stack de automatización:",
+        automation_stack_list: '<li><strong>Testing:</strong> Selenium WebDriver, PyTest, Page Object Model</li><li><strong>APIs:</strong> Requests, schema validation, performance testing</li><li><strong>Data:</strong> Pandas, automatización de reportes, data quality</li><li><strong>Security:</strong> análisis de vulnerabilidades, pentesting automation</li>',
+        about_me_goal: "Mi objetivo es integrar equipos de desarrollo como QA Automation Engineer, donde pueda aportar calidad mediante código, no solo documentos.",
         skills_title: "Conocimientos",
         languages_title: "Lenguajes",
         frameworks_title: "Frameworks y Librerías",
@@ -37,11 +43,17 @@ const translations = {
     en: {
         page_title: "Portfolio",
         greeting: "Hi 👋, I'm",
-        job_title: "Junior Developer specializing in Backend and Data Analytics",
+        job_title: "Python Developer | QA Automation & Testing",
         download_cv: "Download CV",
         view_projects: "View Projects",
         about_me_title: "About Me",
-        about_me_text: "I am a passionate developer with a strong interest in building efficient and scalable solutions. I love learning new technologies and facing challenges that allow me to grow professionally. My goal is to add value through code and collaborate on innovative projects.",
+        about_me_subtitle: "From building applications to ensuring they work perfectly.",
+        about_me_intro: "I started as a backend developer with Django, but discovered my true passion: ensuring that software not only works, but works perfectly at all times. Today I specialize in test automation and quality analysis with Python.",
+        what_i_do_title: "What do I do?",
+        what_i_do_text: "I create automated testing frameworks that detect bugs before users do. I design tools that validate APIs 24/7. I build systems that analyze data and generate reports without human intervention. And I explore how automation can strengthen application security.",
+        automation_stack_title: "My automation stack:",
+        automation_stack_list: '<li><strong>Testing:</strong> Selenium WebDriver, PyTest, Page Object Model</li><li><strong>APIs:</strong> Requests, schema validation, performance testing</li><li><strong>Data:</strong> Pandas, report automation, data quality</li><li><strong>Security:</strong> vulnerability analysis, pentesting automation</li>',
+        about_me_goal: "My goal is to join development teams as a QA Automation Engineer, where I can contribute quality through code, not just documents.",
         skills_title: "Skills",
         languages_title: "Languages",
         frameworks_title: "Frameworks & Libraries",
@@ -92,6 +104,12 @@ function setLanguage(lang) {
     const cvLink = document.getElementById('cv-download-link');
     if (cvLink && translations[lang] && translations[lang]['cv_path']) {
         cvLink.href = translations[lang]['cv_path'];
+    }
+
+    // Special case for automation stack list (HTML content)
+    const stackList = document.getElementById('automation-stack-list');
+    if (stackList && translations[lang] && translations[lang]['automation_stack_list']) {
+        stackList.innerHTML = translations[lang]['automation_stack_list'];
     }
 }
 
