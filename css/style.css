@@ -262,9 +262,3 @@ main, header, nav, .container {
   width: 100%;
   height: 100%;
 }
-
-.cometa {
-  stroke: url(#fugaz-grad);
-  stroke-width: 3px;
-  filter: blur(2px);
-}
